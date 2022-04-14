@@ -173,7 +173,9 @@ nifcloud computing nifty-create-elastic-load-balancer \
 
 ```
 {
-    "DNSName": ""
+    "NiftyCreateElasticLoadBalancerResult": {
+        "DNSName": ""
+    }
 }
 ```
 
