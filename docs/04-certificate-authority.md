@@ -237,7 +237,7 @@ cfssl gencert \
 KUBERNETES_PUBLIC_ADDRESS=$(nifcloud computing nifty-describe-elastic-load-balancers \
   --elastic-load-balancers=ListOfRequestElasticLoadBalancerName=K8sTHWLB \
   --output text \
-  --query 'ElasticLoadBalancerDescriptions[0].NetworkInterfaces[0].IpAddress')
+  --query 'NiftyDescribeElasticLoadBalancersResult.ElasticLoadBalancerDescriptions[0].NetworkInterfaces[0].IpAddress')
 
 KUBERNETES_HOSTNAMES=kubernetes,kubernetes.default,kubernetes.default.svc,kubernetes.default.svc.cluster,kubernetes.svc.cluster.local
 
