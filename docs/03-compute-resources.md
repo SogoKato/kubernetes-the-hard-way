@@ -360,7 +360,7 @@ nifcloud computing nifty-register-instances-with-elastic-load-balancer \
 echo export KUBERNETES_PUBLIC_ADDRESS=$(nifcloud computing nifty-describe-elastic-load-balancers \
   --elastic-load-balancers=ListOfRequestElasticLoadBalancerName=K8sTHWLB \
   --output text \
-  --query 'ElasticLoadBalancerDescriptions[0].NetworkInterfaces[0].IpAddress') > KUBERNETES_PUBLIC_ADDRESS
+  --query 'NiftyDescribeElasticLoadBalancersResult.ElasticLoadBalancerDescriptions[0].NetworkInterfaces[0].IpAddress') > KUBERNETES_PUBLIC_ADDRESS
 ```
 
 SSH キーのパスフレーズは `theveryhardway` です。
